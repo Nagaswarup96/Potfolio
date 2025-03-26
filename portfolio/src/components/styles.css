@@ -1,0 +1,90 @@
+
+.header {
+    font-family: "Klee One", cursive;
+    color:#323232;
+    font-size: 4rem;
+    opacity: 0;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1s;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+
+
+.header span{
+    width: 0px;
+    height: 0px;
+    background: #323232;
+    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+    border-radius: 50%;
+}
+
+@keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+  
+  @keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: #323232;
+      opacity: 0;
+      background-origin: 0px solid #ddd;
+    }
+    50% {
+      width: 10px;
+      height: 10px;
+      background: #323232;
+      opacity: 1;
+      bottom: 45px;
+    }
+    65% {
+      width: 7px;
+      height: 7px;
+      bottom: 7px;
+      width: 15px;
+    }
+    80% {
+      width: 10px;
+      height: 10px;
+      bottom: 20px;
+    }
+    100% {
+      width: 7px;
+      height: 7px;
+      background: #323232;
+      border: 0px solid #222;
+      bottom: 13px;
+    }
+  }
+
+  .navLink{
+    color: #323232 !important;
+  }
