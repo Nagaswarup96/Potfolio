@@ -21,8 +21,14 @@ function ProfileContent() {
           <Typography variant='body1'>Image</Typography>
         </Box>
       </Grid>
+      <Grid item size={12} alignContent={'center'}>
+        <Typography id='about' variant='h6'>About Me</Typography>
+      </Grid>
       <Grid item size={12} >
-        <Typography variant='h6'>About Me</Typography>
+        <Typography id='tech' variant='h6'>Tech Stack</Typography>
+      </Grid>
+      <Grid item size={12} >
+        <Typography id='project' variant='h6'>Projects</Typography>
       </Grid>
     </Grid>
     </>

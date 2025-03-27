@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 .header {
     font-family: "Klee One", cursive;
     color:#323232;
@@ -87,4 +89,6 @@
 
   .navLink{
     color: #323232 !important;
+    text-decoration: none;
+    scroll-behavior: smooth;
   }
