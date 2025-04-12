@@ -91,4 +91,13 @@ html{
     color: #323232 !important;
     text-decoration: none;
     scroll-behavior: smooth;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .navLink:hover{
+    background-color: #323232 !important;
+    color: white !important;
+    text-decoration: none;
   }

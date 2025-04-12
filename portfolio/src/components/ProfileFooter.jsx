@@ -5,7 +5,7 @@ function ProfileFooter() {
   return (
     <>
     <Box
-    sx={{bottom:0, position:'fixed',height:'50px',border:'solid 1px black', width:'100%'}}>
+    sx={{bottom:0, position:'static',height:'50px', width:'100%'}}>
         <Typography>Footer</Typography>
     </Box>
     </>

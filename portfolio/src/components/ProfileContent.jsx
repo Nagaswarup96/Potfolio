@@ -1,38 +1,46 @@
-import { Box, Typography } from '@mui/material';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCode }from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
-import Grid from '@mui/material/Grid2';
+import { Box,  Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import Grid from "@mui/material/Grid2";
+import AboutMe from "./Pages/AboutMe";
 
 function ProfileContent() {
+  
   return (
-    <>
-    <Grid container p={8} sx={{height:'100vw', width:'100%', backgroundColor:'#DDD0C8', color:'#323232'}}>
-      <Grid item size={6}>
-      <Typography variant='h4'>
-          Let's Start
-        </Typography>
-        <Typography variant='h6'>
-        Web Developer <FontAwesomeIcon icon={faCode}/>. Frontend Developer <FontAwesomeIcon icon={faCode}/>.
-        </Typography>
+    <Box p={8}>
+      <Grid
+        container
+        pb={6}
+        sx={{
+          width: "100%",
+        }}
+      >
+        <Grid item size={6} alignContent={"center"} justifyItems={"center"}>
+          
+            
+          <Typography variant="h4" sx={{fontWeight:500}}>Let's Start</Typography>
+          <Typography variant="h6">
+            Web Developer <FontAwesomeIcon icon={faCode} />. Frontend Developer{" "}
+            <FontAwesomeIcon icon={faCode} />.
+          </Typography>
+         
+        </Grid>
+        <Grid item size={6} justifyItems={"center"}>
+         
+          <Box height={400} width={400}>
+            <img
+              src="images/E0997E15-A188-4DE0-AA3B-ABD0A68385F9_1_201_a.jpeg"
+              alt="profile"
+              style={{ borderRadius: "50%", height: "100%", width: "100%" }}
+            />
+          </Box>
+          
+        </Grid>
       </Grid>
-      <Grid item size={6}>
-        <Box>
-          <Typography variant='body1'>Image</Typography>
-        </Box>
-      </Grid>
-      <Grid item size={12} alignContent={'center'}>
-        <Typography id='about' variant='h6'>About Me</Typography>
-      </Grid>
-      <Grid item size={12} >
-        <Typography id='tech' variant='h6'>Tech Stack</Typography>
-      </Grid>
-      <Grid item size={12} >
-        <Typography id='project' variant='h6'>Projects</Typography>
-      </Grid>
-    </Grid>
-    </>
-  )
+      <AboutMe />
+    </Box>
+  );
 }
 
-export default ProfileContent
+export default ProfileContent;
